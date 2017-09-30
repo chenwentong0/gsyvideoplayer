@@ -6,12 +6,12 @@ allprojects {
 
 ext {
     //Android
-    androidBuildToolsVersion = "23.0.1"
-    androidMinSdkVersion = 16
-    androidTargetSdkVersion = 22
-    androidCompileSdkVersion = 22
+    androidBuildToolsVersion = "25.0.0"
+    androidMinSdkVersion = 19
+    androidTargetSdkVersion = 23
+    androidCompileSdkVersion = 24
     supportLibraryVersion = '24.2.0'
-    otherLibraryVersion = '22.2.1'
+    otherLibraryVersion = '24.2.1'
 
     //ViewLibraries
     butterKnifeVersion = '8.2.1'
