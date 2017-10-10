@@ -5,10 +5,12 @@ buildscript {
     repositories {
         maven { url 'https://jitpack.io' }
         jcenter()
+        maven { url 'http://maven.tiantong99.com:8081/nexus/content/repositories/releases/' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.dx168.build:gradle-plugins:1.0.0'
     }
 }
 
@@ -17,6 +19,12 @@ allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
         jcenter()
+    }
+}
+
+subprojects {
+    if (it.name.startsWith("gsy")) {
+        apply from: project.rootProject.file('./gradle/maven-publish.gradle')
     }
 }
 
