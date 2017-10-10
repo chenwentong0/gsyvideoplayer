@@ -178,8 +178,8 @@ public class CommonUtil {
         if (context == null) return null;
         if (context instanceof AppCompatActivity) {
             return (AppCompatActivity) context;
-        } else if (context instanceof ContextThemeWrapper) {
-            return getAppCompActivity(((ContextThemeWrapper) context).getBaseContext());
+//        } else if (context instanceof ContextThemeWrapper) {
+//            return getAppCompActivity(((ContextThemeWrapper) context).getBaseContext());
         }
         return null;
     }
